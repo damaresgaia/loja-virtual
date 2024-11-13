@@ -1,5 +1,4 @@
-$(document).ready(function() {
-    $(".adicionar-carrinho").click(function() {
-        alert("Produto adicionado ao carrinho!");
-    });
-});
+function addToCart(productName) {
+    alert(`${productName} foi adicionado ao carrinho!`);
+}
+

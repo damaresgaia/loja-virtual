@@ -1,29 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Virtual</title>
+    <title>Loja Online</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Flash & Lente</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Sobre a loja</a>
-                    </li>
-                    <li>
-                        <a href="#">Produtos</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        </header>
 
-    <script src="script.js"></script>
+<header>
+    <div class="container">
+        <h1>Petálas e Perfumes</h1>
+        <nav>
+            <a href="#sobre-loja">Sobre a Loja</a>
+            <a href="#produtos">Produtos</a>
+        </nav>
+    </div>
+</header>
+
+<div class="container conteudo">
+    <!-- Sobre a Loja -->
+    <section id="sobre-loja" class="sobre-loja">
+        <div class="imagem-loja">
+            <img src="imagens/loja.jpg" alt="Imagem da Loja">
+        </div>
+        <div class="texto-loja">
+            <h2>Sobre a Loja</h2>
+            <p>Aqui, você encontrará uma variedade de flores frescas, plantas ornamentais, buquês personalizados e arranjos para todos os estilos e ocasiões. Valorizamos o atendimento personalizado, porque cada detalhe importa quando se trata de expressar sentimentos.</p>
+            <p>Seja para presentear alguém especial, decorar seu ambiente ou tornar um dia comum em algo memorável, estamos prontos para levar a beleza das flores até você.</p>
+            <p>Experimente comprar online hoje mesmo e deixe a natureza fazer parte do seu dia.</p>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section>
+        <h2>Produtos</h2>
+        <div id="produtos" class="produtos">
+            <div class="produto">
+                <img src="imagens/flor1.jpg" alt="Margarida">
+                <h3>Margarida</h3>
+                <p>Espécie popularmente conhecida como bem-me-quer ou margarida.</p>
+                <button onclick="addToCart('Margarida')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="imagens/flor2.jpg" alt="Girassol">
+                <h3>Girassol</h3>
+                <p>Planta anual da família Asteraceae, cultivada pelo óleo e frutos comestíveis.</p>
+                <button onclick="addToCart('Girassol')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="imagens/flor3.jpg" alt="Rosas">
+                <h3>Rosa</h3>
+                <p>A rosa é uma das flores mais populares do mundo, cultivada desde a Antiguidade.</p>
+                <button onclick="addToCart('Rosa')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="imagens/flor4.jpg" alt="Orquídeas">
+                <h3>Orquídea</h3>
+                <p>Plantas da família Orchidaceae, conhecidas por sua diversidade e beleza.</p>
+                <button onclick="addToCart('Orquídea')">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>

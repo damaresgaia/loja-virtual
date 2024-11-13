@@ -1,8 +1,8 @@
-body {
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -20,4 +20,55 @@ header .container {
 header {
     padding: 16px 0;
     border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+}
+
+.sobre-loja {
+    display: flex;
+    font-size: 1.2em;
+    margin-bottom: 56px;
+}
+
+.sobre-loja img {
+    margin-right: 20px;
+}
+
+section h2 {
+    margin-bottom: 32px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    /* row-gap: 5%; */
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre-loja {
+        display: block;
+        font-size: 1em;  
+    }
+    
+    .sobre-loja img {
+        margin-right: 0;
+    }
+
+    .produtos {
+        display: block;       
+    }
+
+    .produtos .produto {
+        margin-bottom: 32px;
+    }        
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
 }
