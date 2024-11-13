@@ -21,6 +21,18 @@ header {
     padding: 16px 0;
     border-bottom: 1px solid #ccc;
     margin-bottom: 56px;
+    background-color: blueviolet;
+    color: #ccc;
+}
+
+header a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .sobre-loja {
@@ -35,13 +47,13 @@ header {
 
 section h2 {
     margin-bottom: 32px;
+    color: blueviolet;
 }
 
 .produtos {
     display: grid;
     grid-template-columns: repeat(4, 24.25%);
-    column-gap: 1%;
-    /* row-gap: 5%; */
+    column-gap: 1%; 
 }
 
 @media screen and (max-width: 640px) {
@@ -70,5 +82,15 @@ section h2 {
 @media screen and (min-width: 641px) and (max-width: 1023px) {
     .container {
         max-width: 90%;
+    }
+
+    .sobre-loja {
+        display: block;
+        font-size: 1em;  
+    }
+    
+    .produtos {
+        grid-template-columns: repeat(2, 49%);
+        row-gap: 5%; 
     }
 }
